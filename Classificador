@@ -1,27 +1,34 @@
-let heroi = ["Josh", 9000];
+let heroi = [Josh, 9000];
+let nivel = '';
 
-if (heroi[1] <= 1000) {
-    heroi[1] = "Ferro";
-}
-else if (heroi[1] > 1000 && heroi[1] <= 2000) {
-    heroi[1] = "Bronze";
-}
-else if (heroi[1] > 2000 && heroi[1] <= 5000) {
-    heroi[1] = "Prata";
-}
-else if (heroi[1] > 5000 && heroi[1] <= 7000) {
-    heroi[1] = "Ouro";
-}
-else if (heroi[1] > 7000 && heroi[1] <= 8000) {
-    heroi[1] = "Platina";
-}
-else if (heroi[1] > 8000 && heroi[1] <= 9000) {
-    heroi[1] = "Ascendente";
-}
-else if (heroi[1] > 9000 && heroi[1] < 10000) {
-    heroi[1] = "Imortal";
-}
-else if (heroi[1] >= 10000) {
-    heroi[1] = "Radiante";
-}
-console.log("O herói de nome " + heroi[0] + " está no nível de " + heroi[1]);
+switch (true) {
+    case heroi[1] <= 1000;
+    nivel = 'Ferro';
+    break;
+
+    case heroi[1] <= 2000;
+    nivel = 'Bronze';
+    break;
+
+    case heroi[1] <= 5000;
+    nivel = 'Prata';
+    break;
+
+    case heroi[1] <= 7000;
+    nivel = 'Ouro';
+    break;
+
+    case heroi[1] <= 8000;
+    nivel = 'Platina';
+    break;
+
+    case heroi[1] <= 9000;
+    nivel = 'Ascendente';
+    break;
+
+    case heroi[1] < 10000;
+    nivel = 'Imortal';
+    break;
+
+    default:
+    nivel = 'Radiante';
