@@ -32,3 +32,5 @@ switch (true) {
 
     default:
     nivel = 'Radiante';
+
+    console.log("O herói de nome " + heroi[0] + " está no nível de " + nivel);
